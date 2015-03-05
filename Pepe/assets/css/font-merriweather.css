@@ -15,10 +15,3 @@ h4, h5, h6 {
     font-weight:400;
 }
 
-p.small {
-    line-height: 90%;
-}
-
-p.big {
-    line-height: 200%;
-} 
