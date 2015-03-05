@@ -6,7 +6,7 @@ h4, h5, h6 {
 }
 
 .sez-right-post, .sez-right-line {
-	padding-top: 20px;
+	padding-top: 5px;
 }
 
 /* Post data */
@@ -14,3 +14,11 @@ h4, h5, h6 {
     font-family: 'Merriweather', serif;
     font-weight:400;
 }
+
+p.small {
+    line-height: 90%;
+}
+
+p.big {
+    line-height: 200%;
+} 
