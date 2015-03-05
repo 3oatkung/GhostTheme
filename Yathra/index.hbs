@@ -1,0 +1,101 @@
+{{!< default}}
+
+{{! The comment above "< default" means - insert everything in this file into
+    the {body} of the default.hbs template, which contains our header/footer. }}
+
+{{! The big featured header on the homepage, with the site logo and description }}
+
+<div class="intro">
+  <nav role="navigation" class="trans navbar navbar-default">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="container">
+    <div class="navbar-header">
+        <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a href="{{@blog.url}}" class="navbar-brand"><b>{{@blog.title}}</b></a>
+    </div>
+    <!-- Collection of nav links and other content for toggling -->
+    <div id="navbarCollapse" class="collapse navbar-collapse">
+
+{{> menu}}
+    </div>
+    </div>
+</nav>
+
+
+
+ <div class="blog-description center" style="display: table; height: 80%; width:75%;overflow: hidden; margin:0 auto;">
+     <div style=" display: table-cell; vertical-align: middle;">
+       <div>
+   <h1>{{@blog.description}}</h1>       </div>
+     </div>
+   </div> 
+
+
+   </div>
+
+
+
+<div class="container">
+
+
+
+
+
+
+
+<div class="row loopp">
+
+{{#foreach posts}}
+<div class="col-md-4">
+<div class="post-home">
+<div class="media-entry"><img src="{{image}}"></img></div>
+<div class="post-row">
+<a href="{{url}}"><h1>{{title}}</h1></a>
+{{#author}}<div class="authorimg"><img src="{{image}}"></img><a href="{{url}}#author">{{name}}</a></div>{{/author}}
+<p>{{excerpt words=25}}</p>
+
+<hr>
+Posted in {{tags}} on {{date format="DD MMM YYYY"}}
+
+
+
+
+</div></div></div>
+  {{/foreach}}
+
+
+{{pagination}}
+<div class="footer">
+
+
+ <div class="center" style="display: table; height: 100px; width:100%;overflow: hidden; margin:0 auto;">
+     <div style=" display: table-cell; vertical-align: middle;">
+       <div>
+   
+Copyright <a href="#">Traveler</a>.All rights reserved. 2014.       </div>
+     </div>
+   </div> 
+
+</div>
+<!--end of footer-->
+
+
+
+
+
+</div>
+<!--end of row-->
+
+
+
+
+</div>
+<!--end of container-->
+
+
+

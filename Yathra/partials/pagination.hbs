@@ -1,0 +1,36 @@
+<div class="pagination-custom">
+<div class="col-md-4">
+ <div class="center" style="display: table; height: 45px; width:100%;overflow: hidden; margin:0 auto;">
+     <div style=" display: table-cell; vertical-align: middle;">
+       <div>
+{{#if prev}}<a href="{{page_url prev}}">Newer posts</a>{{/if}}
+
+</div>
+     </div>
+   </div> 
+
+
+</div>
+<div class="col-md-4">
+ <div class="center" style="display: table; height: 45px; width:100%;overflow: hidden; margin:0 auto;">
+     <div style=" display: table-cell; vertical-align: middle;">
+       <div>
+
+{{page}} of {{pages}}
+
+</div>
+     </div>
+   </div> 
+</div>
+<div class="col-md-4">
+ <div class="center" style="display: table; height: 45px; width:100%;overflow: hidden; margin:0 auto;">
+     <div style=" display: table-cell; vertical-align: middle;">
+       <div>
+
+       {{#if next}}<a href="{{page_url next}}">Previous posts </a>{{/if}}
+</div>
+     </div>
+   </div> 
+
+</div>
+</div>
